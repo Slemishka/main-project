@@ -1,0 +1,39 @@
+.mainFooter {
+  background: @main-black;
+  height: 50px;
+  .designAndDev {
+    color: dimgrey;
+    margin-top: 15px;
+  }
+  .companyInitials {
+    color:dimgray;
+    margin-top: 15px;
+  }
+  #devBy {
+    display: inline-block;
+     margin-left:20px;
+   }
+  #desBy {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainFooter {
+    height: 100%;
+  }
+  .companyInitials {
+    text-align: center;
+  }
+  .designAndDev {
+    text-align: center;
+  }
+
+  #devBy {
+    display: block;
+  }
+  #desBy {
+    display: block;
+    margin-left: 20px;
+  }
+}

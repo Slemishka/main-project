@@ -1,0 +1,75 @@
+.gridImage {
+  width: 100%;
+  height: 100%;
+
+  &:hover {
+    .cartAndStuff {
+      display: block;
+    }
+    -webkit-box-shadow: 0px 0px 36px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 36px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 36px -4px rgba(0,0,0,0.75);
+}
+}
+.price {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 30px;
+  color: grey;
+
+}
+#priceFalse {
+  text-decoration: line-through;
+}
+.cartAndStuff {
+  display: none;
+  border-radius: 2px;
+  font-size: 30px;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  left: 15px;
+
+  a{
+    background: grey;
+    color: white;
+    border-radius: 25px;
+    &:hover {
+      background: @bluish;
+    }
+    i {
+      top: 5px;
+    }
+  }
+}
+
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+
+.grid-item {
+  float: left;
+  width: 420px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+.grid-item--width2 { width: 870px;}
+.grid-item--height2 {height: 700px}
+
+@media  screen and(max-width: 768px) {
+  .grid-item {
+    width: 100%;
+  }
+  .grid-item--width2 { width: 100%;}
+  .grid-item--height2 {height: 270px}
+  .gridImage {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,122 @@
+.footerUpper {
+  background-color: @main-gray;
+}
+.footerLink {
+  color: black;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.footerInfo {
+
+
+
+  .footerUl {
+    display: inline-block;
+    list-style: none;
+    vertical-align: top;
+
+  }
+  .footer_li {
+    margin-top: 10px;
+  }
+}
+.footerHeader {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+
+//second part
+.blocks {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.award {
+  color: white;
+  font-size: 30px;
+  background:@main-black;
+  width: 465px;
+  height: 140px;
+
+  .awardText{
+    text-align: center;
+    padding-top: 25px;
+  }
+}
+
+
+
+.socials {
+  color: white;
+  font-size: 30px;
+  background-color: @bluish;
+  width: 465px;
+  height: 140px;
+
+  .socialUl {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    padding-top: 50px;
+  }
+  .socialLi {
+    display: inline-block;
+    margin-left: 30px;
+  }
+}
+
+@media screen and  (max-width: 768px) {
+
+  .award {
+    width: 300px;
+    margin: 0 auto;
+    height: 100%
+  ;
+  }
+  .socials {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .footerInfo {
+
+    .footerUl {
+      padding:0;
+      text-align: center;
+      display: block;
+    }
+
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .footerInfo .footerUl {
+    margin-left: 25px;
+  }
+}
+@media (min-width: 768px)and(max-width: 1200px) {
+  .award {
+    margin: 0 auto;
+  }
+  .socials {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1000px)and(max-width: 1200px) {
+  .footerInfo .footerUl {
+    margin-left: 0px;
+  }
+
+
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .footerInfo {
+    text-align: center;
+  }
+}

@@ -1,0 +1,291 @@
+@main-gray:#f8f8f8;
+@mainGray-darken:#E1E1E1;
+@bluish:#00c8c8;
+
+
+.main-nav {
+  height: 800px;
+  background-repeat: no-repeat;
+  background-image: url("/all_media/home_page/main_man.png");
+  background-position: left top;
+  background-size:cover ;
+}
+.marNav {
+  top: 40px;
+}
+.searchLi {
+  .search{
+    border: none;
+    background: @main-gray;
+    height:30px;
+
+  };
+  .searchBtn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-image: none;
+    border-radius: 0;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px 0;
+    background: @main-gray;
+  };
+  background: white;
+}
+#mainNav {
+  float:right;
+  margin-right: 80px;
+}
+.logo {
+  margin-top: 35px;
+
+}
+.searchLi {
+  margin-top: 10px;
+  background: @main-gray;
+  width: 210px;
+  height: 35px;
+  float: right;
+  display: inline-block;
+  border-style:solid;
+  border-width:1px ;
+  border-color: @mainGray-darken ;
+}
+.searchBtn{
+  font-size: 13px;
+}
+.menuItems {
+  float: right;
+  background-color: @main-gray;
+}
+.menuLink{
+  color: black;
+  font-weight: bold;
+
+
+  &:hover {
+    color: @bluish;
+  }
+}
+
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 4px;
+  border-radius: 1px;
+  background-color: black;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+//drop Menu
+.dropMen {
+  list-style: none;
+  margin-top: 15px;
+}
+.drop_li {
+  margin-top: 10px;
+}
+.dropLink {
+  text-decoration: none;
+  color:black;
+  margin-top: 5px;
+}
+.navItem > .drop {
+  display: none;
+  width: 465px;
+  height: 530px;
+  position: absolute;
+  background-color: @main-gray;
+  -webkit-box-shadow: 0px 3px 15px -5px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 3px 15px -5px rgba(0,0,0,1);
+  box-shadow: 0px 3px 15px -5px rgba(0,0,0,1);
+}
+.navItem:hover > .drop {
+  display: block;
+
+}
+.casuals{
+  margin-left: 35px;
+  font-size: 18px;
+}
+.first-column {
+  float: left;
+  margin-top: 35px;
+  display: inline-block;
+}
+.second-column {
+  display: inline-block;
+  margin-top: 35px;
+}
+.third-column {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 35px;
+}
+
+.formal {
+  margin-left: 35px;
+  font-size: 18px;
+}
+
+.collection {
+  margin-top: 550px;
+  #collectionBtn {
+    width: 250px;
+    height: 40px;
+    background-color: @main-gray;
+    border-color: black;
+    border-style: solid;
+    font-weight: bold;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+.sticky {
+  position: fixed;
+
+  top: 0;
+  width: 100%;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+.stickyBtn {
+  position: fixed;
+  top: 0;
+  right: 1px;
+  -webkit-transition: 2s;
+  transition: 2s;
+  margin-top: 1px;
+}
+.navItem {
+  margin-right: 30px;
+}
+.noNeedForCarret {
+  color: @main-gray;
+}
+
+@media (max-width: 768px) {
+  ////animation for nav
+  //.navbar-toggle.collapsed .icon-bar:nth-of-type(1) {
+  //  transform: translate3d(0,0,0) rotate(0deg);
+  //}
+  //
+  //.navbar-toggle.collapsed .icon-bar:nth-of-type(2) {
+  //  transform: translate3d(0,0,0) rotate(0deg);
+  //}
+  //
+  //.navbar-toggle.collapsed .icon-bar:nth-of-type(3) {
+  //  transform: translate3d(0,0,0) rotate(0deg);
+  //}
+  //
+  //.navbar-toggle .icon-bar:nth-of-type(1) {
+  //  transform: translate3d(0,6px,0);
+  //}
+  //
+  //.navbar-toggle .icon-bar:nth-of-type(3) {
+  //  transform: translate3d(0,-6px,0);
+  //}
+  //
+  //
+  ////end of animation
+
+
+  .searchLi {
+    display: none;
+  }
+  .main-nav {
+    background-position: 30%;
+  }
+  .navItem:hover > .drop {
+    display: none;
+
+  }
+  .hiddenItemNav {
+
+  }
+  .logo {
+    display: none;
+  }
+  #mainNav {
+    display: none;
+  }
+  .menuItems {
+    background: white;
+    border-style: outset;
+  }
+  .marNav {
+    background: @main-gray;
+  }
+}
+@media (min-width: 768px) and (max-width: 1300px) {
+    .third-column {
+      margin-left: 0px;
+    }
+    .marNav {
+      background-color: @main-gray;
+    }
+    .logo {
+      position: absolute;
+      margin-left: 35px;
+    }
+    .searchLi {
+      position: absolute;
+      right: 100px;
+      margin-top: 45px;
+
+    }
+  #mainNav {
+    margin-top: 100px;
+    float: none;
+    margin-right: 0px;
+  }
+
+
+
+  .nav
+  .navItem {
+    float: none;
+    display: inline-block;
+  }
+  .menuItems {
+    float: none;
+    text-align: center;
+  }
+
+}
+@media (min-width: 1300px) and (max-width: 1800px) {
+  .marNav {
+    background-color: @main-gray;
+  }
+  #mainNav {
+    margin-top: 35px;
+    float: none;
+    margin-right: 0px;
+  }
+.nav
+  .navItem {
+    float: none;
+    display: inline-block;
+  }
+  .menuItems {
+       float: none;
+       text-align: center;
+     }
+}
+@media (min-width: 1600px) {
+  .searchLi {
+    margin-right: 100px;
+  }
+  .logo {
+    margin-left: 100px;
+  }
+}
+
+
+//Андрій сказати зробити посицію абсолют і мерджінами опустити нав

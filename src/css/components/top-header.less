@@ -1,0 +1,79 @@
+@main-black:#333333 none repeat scroll 0 0;
+
+.homeLink {
+  display: none;
+  padding-top: 10px;
+  .homeLinkBtn {
+    background: #333;
+    color: grey;
+    position: static;
+    font-size: 20px;
+    a {
+      color: grey;
+      text-decoration: none;
+    }
+  }
+}
+.top-header {
+  background: @main-black
+
+}
+#currBtn {
+  background: #333;
+  color: grey;
+  position: static;
+}
+
+#registrBtn {
+
+  &:hover a{
+    color:#00c8c8;
+  };
+  #currBtn;
+  a{
+    color:grey;
+
+    &:hover{
+      text-decoration:none ;
+    }
+  }
+}
+#signBtn{
+  #registrBtn;
+}
+#emptyCart {
+  background: #00c8c8;
+  border: none;
+  margin-top: -10px;
+  height: 50px;
+  padding-top: 7px;
+  width: 132px;
+  color: white;
+}
+
+
+@media screen and  (max-width: 768px){
+  .top-header {
+    height: 60px;
+  }
+  .homeLink {
+    display: block;
+  }
+  .currency {
+    display: none;
+  }
+  .topBtns {
+    height: 60px;
+    padding-top: 10px;
+    #registrBtn {
+      display: none;
+    }
+    #signBtn {
+      font-size: 20px;
+    }
+  }
+  .fixed-header {
+    margin-top: 40px;
+  }
+}
+

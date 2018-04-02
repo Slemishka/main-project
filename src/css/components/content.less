@@ -1,0 +1,223 @@
+.contentNav {
+margin-top: 50px;
+  padding-left: 145px;
+  padding-right: 145px;
+
+  .main_content_nav {
+    padding-top: 9px;
+    border-top: 1px solid #eee;
+  }
+  .main_nav_ul {
+    list-style: none;
+
+
+    .main_nav_Li {
+      display: inline-block;
+
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-right: 45px;
+
+
+      text-transform: uppercase;
+      font-weight: bold;
+
+
+      a {
+        color: black;
+        text-decoration: none;
+
+      }
+      .active, a:hover {
+        color: @bluish;
+      }
+    }
+  }
+
+}
+
+.contentMain {
+  margin-top: 50px;
+  padding-left: 145px;
+  padding-right: 145px;
+}
+.firstImg {
+  background-image: url("/all_media/home_page/item1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.secondImg {
+  background-image: url("/all_media/home_page/item2.png");
+    background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.thirdImg {
+  background-image: url("/all_media/home_page/item3.png");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.fourthImg {
+  background-image: url("/all_media/home_page/item4.png");
+    background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.fifthImg {
+  background-image: url("/all_media/home_page/item5.png");
+    background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sixthImg {
+  background-image: url("/all_media/home_page/item6.png");
+    background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contentLower {
+  text-align: center;
+  margin-bottom: 60px;
+  
+  .men_viewbook {
+    float: left;
+    display: inline-block;
+    height: 400px;
+    width: 600px;
+    background-image: url("/all_media/home_page/replace_m.png");
+    background-repeat: no-repeat;
+  }
+  .women_viewbook {
+    display: inline-block;
+    height: 400px;
+    width: 600px;
+    background-image: url("/all_media/home_page/replace_w.png");
+    background-repeat: no-repeat;
+  }
+  .your_viewbook {
+    float: right;
+    display: inline-block;
+    height: 400px;
+    width: 600px;
+    background-image: url("/all_media/home_page/your_lookbook.png");
+    background-repeat: no-repeat;
+  }
+  .viewbook {
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 30px;
+  }
+  .viewNow {
+    margin-top: 30px;
+    border-style: solid;
+    border-color: black;
+    padding: 12px 25px;
+    background: none;
+
+    &:hover {
+      background: @bluish;
+      border: none;
+      color: white;
+    }
+  }
+}
+
+
+@media (min-width: 1500px)and(max-width: 1800px) {
+  .contentLower {
+    .men_viewbook {
+
+      height: 400px;
+      width: 500px;
+
+    }
+    .women_viewbook {
+
+      height: 400px;
+      width: 500px;
+    }
+    .your_viewbook {
+
+      height: 400px;
+      width: 500px;
+    }
+  }
+}
+@media (max-width:1500px) {
+
+  .contentLower {
+
+    .men_viewbook {
+      float:none;
+      height: 400px;
+
+      display: block;
+      margin: 0 auto;
+    }
+    .women_viewbook {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+    .your_viewbook {
+      float:none;
+      height: 400px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .contentNav {
+    padding-left: 45px;
+    padding-right: 0;
+  }
+}
+@media (max-width: 815px) {
+  .contentNav {
+    .main_nav_ul {
+      text-align: center;
+      .main_nav_Li {
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .contentMain {
+    padding: 0;
+  }
+
+
+  .contentLower {
+    text-align: unset;
+    .men_viewbook {
+
+      height: 400px;
+      width: 320px;
+      margin-bottom: 225px;
+    }
+    .women_viewbook {
+
+      height: 400px;
+      width: 320px;
+      margin-bottom: 225px;
+    }
+    .your_viewbook {
+
+      height: 400px;
+      width: 320px;
+      margin-bottom: 225px;
+    }
+    .viewbook {
+      padding-top: 385px;
+    }
+  }
+
+
+
+}
