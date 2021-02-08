@@ -14,4 +14,6 @@ npm i
 
 gulp
 
+
+<strong>main page:</strong>
 ![](screenshots/test.png)
