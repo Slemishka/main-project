@@ -17,3 +17,9 @@ gulp
 
 <strong>main page:</strong>
 ![](screenshots/test.png)
+
+<strong>SIGN IN PAGE</strong>
+![](screenshots/test2.png)
+
+<strong>Location Page</strong>
+![](screenshots/test3.png)
