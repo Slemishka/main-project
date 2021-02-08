@@ -22,4 +22,4 @@ gulp
 ![](screenshots/test2.png)
 
 <strong>Location Page</strong>
-![](screenshots/test3.png)
+![](screenshots/test%203.png)
